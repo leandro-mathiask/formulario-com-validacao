@@ -1,0 +1,114 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    color: white;
+}
+
+.container {
+    width: 800px;
+    height: 402px;
+    background: url(../images/bg-repeat.jpg) repeat-x;
+    background-position: cover;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    padding: 0 5rem;
+}
+
+.container .info-title .title {
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-bottom: 1.1rem;
+}
+
+.container .info-title .subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.container .form {
+    
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 378px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .form input {
+    width: 298px;
+    height: 35px;
+    border-radius: 5px;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    margin-top: 3px;
+}
+
+.container .form span {
+    color: black;
+    align-self: start;
+    padding: 0 0 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+textarea {
+    width: 298px;
+    height: 100px;
+    padding: 5px 1rem;
+    font-size: 1.5rem;
+    margin-top: 3px;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    resize: none;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.container .form textarea::placeholder {
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+#submit {
+    height: 41px;
+    width: 298px;
+    font-weight: 700;
+    background-color: #3CCC87;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+#submit:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    
+}
+
+.notificacao {
+    width: 298px;
+    color: red;
+    padding-top: 2px;
+    visibility: hidden;
+    font-size: 8px;
+}
+
+.erro {
+    border: 2px solid red;
+}
+
+.sucesso {
+    border: 2px solid green;
+}
+

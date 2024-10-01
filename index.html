@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio - Formulário com validação </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <section class="container">
+        <div class="info-title">
+            <h1 class="title">ficou com dúvida? <br>Nos mande uma mensagem!</h1>
+            <h2 class="subtitle">caso tenha ficado com qualquer dúvida <br> basta nos mandar uma mensagem e <br>
+                entraremos em
+                contato em menos de 24h.</h2>
+        </div>
+        <form class="form">
+            <input class="input" type="text" name="nome" id="nome" placeholder="Nome completo *">
+            <label class="notificacao" for="nome">Campo Obrigatório</label>
+
+            <input class="input" type="email" name="email" id="email" placeholder="Email *">
+            <label class="notificacao" for="email">Campo Obrigatório</label>
+
+            <input class="input" type="number" name="telefone" id="telefone" placeholder="Telefone *">
+            <label class="notificacao" for="telefone">Campo Obrigatório</label>
+
+            <textarea class="input" name="mensagem" placeholder="Mensagem *" id="mensagem"></textarea>
+            <label class="notificacao" for="mensagem">Campo Obrigatório</label>
+            <span>*campos obrigatórios</span>
+            <button onclick="verificacao()" id="submit">Enviar</button>
+        </form>
+    </section>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
